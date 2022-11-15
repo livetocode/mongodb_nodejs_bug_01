@@ -18,7 +18,7 @@ then
     # helm upgrade --install -n $NAMESPACE community-operator mongodb/community-operator
     kubectl apply -n $NAMESPACE -f https://raw.githubusercontent.com/percona/percona-server-mongodb-operator/v1.13.0/deploy/bundle.yaml
 
-    helm upgrade --install -n $NAMESPACE mongo-cluster $CHARTS/mongo-cluster  --set fullnameOverride=$MONGO_NAME,replicaset.name=$MONGO_RS_NAME --dry-run --debug
+    helm upgrade --install -n $NAMESPACE mongo-cluster $CHARTS/mongo-cluster  --set fullnameOverride=$MONGO_NAME,replicaset.name=$MONGO_RS_NAME
 fi
 
 if [[ "$INSTALL_PROMETHEUS" == "true" ]]
@@ -28,7 +28,7 @@ fi
 
 if [[ "$INSTALL_GRAFANA" == "true" ]]
 then
-    helm upgrade --install -n $NAMESPACE graf grafana/grafana -f $SCRIPT_FOLDER/../deployment/charts/grafana/values.yaml
+    helm upgrade --install -n $NAMESPACE graf grafana/grafana -f $ROOT_FOLDER/deployment/charts/grafana/values.yaml
 fi
 
 if [[ "$INSTALL_MONGO_CHAOS" == "true" ]]
