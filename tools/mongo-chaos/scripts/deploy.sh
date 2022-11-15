@@ -13,4 +13,5 @@ NAME="mongo-chaos"
 helm upgrade --install $NAME \
     $CHARTS/mongo-chaos \
     -n $NAMESPACE \
-    --set fullnameOverride=$NAME
+    --set fullnameOverride=$NAME \
+    --wait

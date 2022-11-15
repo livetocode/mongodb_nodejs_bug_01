@@ -24,7 +24,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 3,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -1813,7 +1812,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "sum(increase(mongodb_client_test_skipped_tasks_total{driverWithVersion=~\"$driverWithVersion\", result=\"failure\"}[5m])) by (driverWithVersion)",
+          "expr": "sum(increase(mongodb_client_test_skipped_tasks_total{driverWithVersion=~\"$driverWithVersion\"}[5m])) by (driverWithVersion)",
           "legendFormat": "{{driverWithVersion}}",
           "range": true,
           "refId": "A"
@@ -2085,8 +2084,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -2207,6 +2205,6 @@
   "timezone": "",
   "title": "MongoDB client tests",
   "uid": "OjVAKqSVz",
-  "version": 9,
+  "version": 1,
   "weekStart": ""
 }
