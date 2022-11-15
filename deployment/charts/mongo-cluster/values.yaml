@@ -1,0 +1,19 @@
+# Default values for mongo-cluster.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaset:
+  name: "rs0"
+  size: 3
+
+image:
+  repository: percona/percona-server-mongodb
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "5.0.11-10"
+  crVersion: "1.13.0"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
