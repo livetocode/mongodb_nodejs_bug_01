@@ -70,6 +70,7 @@ affinity: {}
 
 mongo:
   url: ""
+  collectionName: Samples
 
 logs:
   verbose: false

@@ -41,6 +41,8 @@ spec:
                   name: {{ include "mongo-client.fullname" . }}
             - name: VERBOSE
               value: "{{ .Values.logs.verbose }}"
+            - name: MONGO_COLLECTION_NAME
+              value: "{{ .Values.mongo.collectionName }}"
           ports:
             - name: http
               containerPort: 3000

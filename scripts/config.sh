@@ -20,3 +20,6 @@ export MONGO_PORT="27017"
 export MONGO_DB_NAME="foobar"
 export MONGO_RS_NAME="rs0"
 export MONGO_AUTH_SOURCE="admin"
+export MONGO_COLLECTION_NAME="Samples"
+export CUSTOM_MONGO_CONNECTION_STRING=""
+

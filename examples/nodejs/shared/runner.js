@@ -27,7 +27,7 @@ function run({ mongodb, promClient, promBundle, express, pkg }) {
   const logAttributes = !FALSE_VALUES.includes(process.env.LOG_ATTRIBUTES);
   const serverPort = parseInt(process.env.SERVER_PORT || "3000");
   const mongoUrl = process.argv[2] || process.env.MONGO_URL;
-  const collectionName = "Samples";
+  const collectionName = process.env.MONGO_COLLECTION_NAME || "Samples";
 
   const mongoOpts = meta.driverVersion.startsWith('3.') ? {
     useNewUrlParser: true,

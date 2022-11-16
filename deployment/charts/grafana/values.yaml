@@ -26,6 +26,7 @@ dashboardProviders:
      type: file
      disableDeletion: false
      editable: true
+     updateIntervalSeconds: 600
      options:
        path: /var/lib/grafana/dashboards/default
 

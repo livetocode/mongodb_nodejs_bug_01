@@ -29,7 +29,7 @@ RUNTIME = 'python'
 DRIVER = 'pymongo'
 DRIVER_VERSION = '4.3.2'
 DRIVER_WITH_VERSION = "%s-%s" % (DRIVER, DRIVER_VERSION) 
-COLLECTION_NAME = 'Samples'
+COLLECTION_NAME = os.environ.get('MONGO_COLLECTION_NAME', 'Samples')
 
 # Create a metric to track time spent and requests made.
 METRICS_PREFIX = "mongodb_client_test_"

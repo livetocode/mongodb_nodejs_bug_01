@@ -41,16 +41,22 @@ function deployMongoClientHelmChart {
 
 function generateMongoValues {
     # generate MongoDB connection string
-    MONGO_HOST="$(kubectl get perconaservermongodb -n $NAMESPACE $MONGO_NAME -o  jsonpath='{.status.host}')"
-    MONGO_USER="$(kubectl get secret -n $NAMESPACE $MONGO_NAME-secrets -o  jsonpath='{.data.MONGODB_DATABASE_ADMIN_USER}' | base64 -d)"
-    MONGO_PWD="$(kubectl get secret -n $NAMESPACE $MONGO_NAME-secrets -o  jsonpath='{.data.MONGODB_DATABASE_ADMIN_PASSWORD}' | base64 -d)"
-    MONGO_NODE1="$MONGO_NAME-$MONGO_RS_NAME-0.$MONGO_HOST:$MONGO_PORT"
-    MONGO_NODE2="$MONGO_NAME-$MONGO_RS_NAME-1.$MONGO_HOST:$MONGO_PORT"
-    MONGO_NODE3="$MONGO_NAME-$MONGO_RS_NAME-2.$MONGO_HOST:$MONGO_PORT"
+    CONNECTION_STRING=$CUSTOM_MONGO_CONNECTION_STRING
+    if [[ -z "$CONNECTION_STRING" ]]
+    then
+        MONGO_HOST="$(kubectl get perconaservermongodb -n $NAMESPACE $MONGO_NAME -o  jsonpath='{.status.host}')"
+        MONGO_USER="$(kubectl get secret -n $NAMESPACE $MONGO_NAME-secrets -o  jsonpath='{.data.MONGODB_DATABASE_ADMIN_USER}' | base64 -d)"
+        MONGO_PWD="$(kubectl get secret -n $NAMESPACE $MONGO_NAME-secrets -o  jsonpath='{.data.MONGODB_DATABASE_ADMIN_PASSWORD}' | base64 -d)"
+        MONGO_NODE1="$MONGO_NAME-$MONGO_RS_NAME-0.$MONGO_HOST:$MONGO_PORT"
+        MONGO_NODE2="$MONGO_NAME-$MONGO_RS_NAME-1.$MONGO_HOST:$MONGO_PORT"
+        MONGO_NODE3="$MONGO_NAME-$MONGO_RS_NAME-2.$MONGO_HOST:$MONGO_PORT"
+        CONNECTION_STRING="mongodb://$MONGO_USER:$MONGO_PWD@$MONGO_NODE1,$MONGO_NODE2,$MONGO_NODE2/$MONGO_DB_NAME?replicaSet=$MONGO_RS_NAME&authSource=$MONGO_AUTH_SOURCE"
+    fi
     mkdir -p $TEMP_FOLDER
     cat > $TEMP_FOLDER/mongo-values.yaml <<EOF
 mongo:
-  url: "mongodb://$MONGO_USER:$MONGO_PWD@$MONGO_NODE1,$MONGO_NODE2,$MONGO_NODE2/$MONGO_DB_NAME?replicaSet=$MONGO_RS_NAME&authSource=$MONGO_AUTH_SOURCE"
+  url: "$CONNECTION_STRING"
+  collectionName: $MONGO_COLLECTION_NAME
 EOF
 }
 
