@@ -22,7 +22,6 @@ lib-cov
 lcov.info
 pids
 logs
-results
 .VSCodeCounter
 *.log
 tsconfig.tsbuildinfo

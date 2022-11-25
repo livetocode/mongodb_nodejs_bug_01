@@ -1,0 +1,474 @@
+(node:1) ExperimentalWarning: Importing JSON modules is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"timestamp":"2022-11-16T03:06:59.043Z","msg":"[INFO] MongoDB client using runtime nodejs and driver mongodb 4.11.0"}
+{"timestamp":"2022-11-16T03:06:59.139Z","msg":"[STARTUP] Connecting to MongoDB dvllmg01a.ile.montreal.qc.ca:27001,dvllmg01b.ile.montreal.qc.ca:27001,dvllmg01c.ile.montreal.qc.ca:27001/statuspageapi","data":{"opts":{}}}
+{"timestamp":"2022-11-16T03:06:59.143Z","msg":"[EVENT] [topologyOpening]","data":{"topologyId":0}}
+{"timestamp":"2022-11-16T03:06:59.143Z","msg":"[EVENT] [topologyDescriptionChanged] Unknown --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T03:06:59.144Z","msg":"[EVENT] [serverOpening] [dvllmg01a]","data":{"topologyId":0,"address":"dvllmg01a.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T03:06:59.233Z","msg":"[EVENT] [serverOpening] [dvllmg01b]","data":{"topologyId":0,"address":"dvllmg01b.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T03:06:59.234Z","msg":"[EVENT] [serverOpening] [dvllmg01c]","data":{"topologyId":0,"address":"dvllmg01c.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T03:06:59.332Z","msg":"[EVENT] [serverOpening] [dvllmg01b]","data":{"topologyId":0,"address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T03:06:59.333Z","msg":"[EVENT] [serverOpening] [dvllmg01a]","data":{"topologyId":0,"address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T03:06:59.333Z","msg":"[EVENT] [serverOpening] [dvllmg01c]","data":{"topologyId":0,"address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T03:06:59.335Z","msg":"[EVENT] [serverClosed] [dvllmg01a]","data":{"topologyId":0,"address":"dvllmg01a.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T03:06:59.336Z","msg":"[EVENT] [serverHeartbeatFailed] [dvllmg01b]","data":{"connectionId":"dvllmg01b.ile.montreal.qc.ca:27001","duration":102,"failure":{}}}
+{"timestamp":"2022-11-16T03:06:59.336Z","msg":"[EVENT] [serverClosed] [dvllmg01b]","data":{"topologyId":0,"address":"dvllmg01b.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T03:06:59.336Z","msg":"[EVENT] [serverHeartbeatFailed] [dvllmg01c]","data":{"connectionId":"dvllmg01c.ile.montreal.qc.ca:27001","duration":103,"failure":{}}}
+{"timestamp":"2022-11-16T03:06:59.337Z","msg":"[EVENT] [serverClosed] [dvllmg01c]","data":{"topologyId":0,"address":"dvllmg01c.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T03:06:59.337Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T03:06:59.343Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] Unknown --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T03:06:59.343Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T03:06:59.345Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] Unknown --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T03:06:59.345Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T03:06:59.345Z","msg":"[INFO] new primary is dvllmg01a (Old was Unknown)"}
+{"timestamp":"2022-11-16T03:06:59.345Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T03:06:59.347Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] Unknown --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T03:06:59.347Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T03:06:59.732Z","msg":"[STARTUP] Connected to MongoDB dvllmg01a.ile.montreal.qc.ca:27001,dvllmg01b.ile.montreal.qc.ca:27001,dvllmg01c.ile.montreal.qc.ca:27001/statuspageapi"}
+{"timestamp":"2022-11-16T03:06:59.740Z","msg":"[INFO] Registering signal handler for SIGHUP"}
+{"timestamp":"2022-11-16T03:06:59.740Z","msg":"[INFO] Registering signal handler for SIGINT"}
+{"timestamp":"2022-11-16T03:06:59.740Z","msg":"[INFO] Registering signal handler for SIGTERM"}
+{"timestamp":"2022-11-16T03:06:59.743Z","msg":"[INFO] Listening on port 3000..."}
+{"timestamp":"2022-11-16T03:56:05.130Z","msg":"[TASK] [5883] [Get documents] Elapsed time: 203 ms (slow task) for 4 docs","data":{"elapsedTime":203}}
+{"timestamp":"2022-11-16T04:35:47.833Z","msg":"[TASK] [10643] [Get documents] Elapsed time: 104 ms (slow task) for 4 docs","data":{"elapsedTime":104}}
+{"timestamp":"2022-11-16T05:09:14.735Z","msg":"[TASK] [14652] [Get documents] Elapsed time: 203 ms (slow task) for 4 docs","data":{"elapsedTime":203}}
+{"timestamp":"2022-11-16T08:18:13.871Z","msg":"[TASK] [37304] [Get documents] Elapsed time: 202 ms (slow task) for 4 docs","data":{"elapsedTime":202}}
+{"timestamp":"2022-11-16T09:03:50.446Z","msg":"[TASK] [42771] [Get documents] Elapsed time: 203 ms (slow task) for 4 docs","data":{"elapsedTime":203}}
+{"timestamp":"2022-11-16T09:21:49.657Z","msg":"[TASK] [44927] [Get documents] Elapsed time: 202 ms (slow task) for 4 docs","data":{"elapsedTime":202}}
+{"timestamp":"2022-11-16T09:39:01.349Z","msg":"[TASK] [46988] [Get documents] Elapsed time: 205 ms (slow task) for 4 docs","data":{"elapsedTime":205}}
+{"timestamp":"2022-11-16T09:56:01.029Z","msg":"[TASK] [49025] [Get documents] Elapsed time: 189 ms (slow task) for 4 docs","data":{"elapsedTime":189}}
+{"timestamp":"2022-11-16T10:42:41.929Z","msg":"[TASK] [54620] [Get documents] Elapsed time: 203 ms (slow task) for 4 docs","data":{"elapsedTime":203}}
+{"timestamp":"2022-11-16T10:45:48.163Z","msg":"[TASK] [54992] [Get documents] Elapsed time: 202 ms (slow task) for 4 docs","data":{"elapsedTime":202}}
+{"timestamp":"2022-11-16T10:53:29.697Z","msg":"[TASK] [55914] [Get documents] Elapsed time: 208 ms (slow task) for 4 docs","data":{"elapsedTime":208}}
+{"timestamp":"2022-11-16T12:05:24.157Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T12:05:24.205Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:05:24.206Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:05:24.206Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:05:24.207Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:05:24.207Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:05:34.192Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:05:34.192Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:05:34.202Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:05:34.202Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:05:35.172Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:05:35.172Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:05:35.176Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSPrimary --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T12:05:35.177Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T12:05:35.178Z","msg":"[INFO] Disconnected from MongoDB server"}
+{"timestamp":"2022-11-16T12:05:35.209Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:05:35.209Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T12:05:35.215Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T12:05:35.215Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T12:05:35.218Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:05:35.218Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T12:05:35.230Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:05:35.230Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:05:35.231Z","msg":"[INFO] new primary is dvllmg01c (Old was dvllmg01a)"}
+{"timestamp":"2022-11-16T12:05:35.231Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T12:05:35.231Z","msg":"[INFO] Reconnecting to MongoDB server, after 53 ms","data":{"elapsedTime":53}}
+{"timestamp":"2022-11-16T12:05:35.452Z","msg":"[TASK] [64555] [Get documents] Elapsed time: 180 ms (slow task) for 4 docs","data":{"elapsedTime":180}}
+{"timestamp":"2022-11-16T12:05:35.452Z","msg":"[TASK] [64555] [Get documents] First time to execute after disconnection: 274 ms"}
+{"timestamp":"2022-11-16T12:05:45.225Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T12:05:45.226Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:05:45.233Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:05:45.234Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:28.961Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:35:28.961Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:28.974Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T12:35:28.974Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:28.982Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:35:28.982Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:38.987Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T12:35:38.987Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:38.997Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:35:38.998Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:40.180Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:35:40.180Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:40.195Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSPrimary --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:35:40.196Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T12:35:40.196Z","msg":"[INFO] Disconnected from MongoDB server"}
+{"timestamp":"2022-11-16T12:35:40.198Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T12:35:40.198Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T12:35:40.198Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:35:40.198Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T12:35:40.201Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T12:35:40.201Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:40.201Z","msg":"[INFO] new primary is dvllmg01b (Old was dvllmg01c)"}
+{"timestamp":"2022-11-16T12:35:40.201Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T12:35:40.201Z","msg":"[INFO] Reconnecting to MongoDB server, after 5 ms","data":{"elapsedTime":5}}
+{"timestamp":"2022-11-16T12:35:40.205Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:35:40.205Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:40.456Z","msg":"[TASK] [68161] [Get documents] First time to execute after disconnection: 260 ms"}
+{"timestamp":"2022-11-16T12:35:50.214Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T12:35:50.214Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T12:35:50.215Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T12:35:50.215Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:32.776Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:05:32.776Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:32.790Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:05:32.790Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:32.790Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:05:32.790Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:42.797Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:05:42.797Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:42.801Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:05:42.802Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:43.891Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:05:43.891Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:43.907Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSPrimary --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:05:43.907Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:05:43.907Z","msg":"[INFO] Disconnected from MongoDB server"}
+{"timestamp":"2022-11-16T13:05:43.983Z","msg":"[TASK] [71764] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:05:44.484Z","msg":"[TASK] [71765] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:05:44.928Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:05:44.928Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:05:44.935Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:05:44.935Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:44.935Z","msg":"[INFO] new primary is dvllmg01a (Old was dvllmg01b)"}
+{"timestamp":"2022-11-16T13:05:44.935Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T13:05:44.935Z","msg":"[INFO] Reconnecting to MongoDB server, after 1028 ms","data":{"elapsedTime":1028}}
+{"timestamp":"2022-11-16T13:05:44.937Z","msg":"[TASK] [71764] [Get documents] Elapsed time: 953 ms (slow task, was disconnected) for 4 docs","data":{"elapsedTime":953}}
+{"timestamp":"2022-11-16T13:05:44.937Z","msg":"[TASK] [71764] [Get documents] First time to execute after disconnection: 1030 ms"}
+{"timestamp":"2022-11-16T13:05:44.947Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:05:44.948Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:44.948Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:05:44.948Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:44.951Z","msg":"[TASK] [71765] [Get documents] Elapsed time: 467 ms (slow task, was disconnected) for 4 docs","data":{"elapsedTime":467}}
+{"timestamp":"2022-11-16T13:05:44.984Z","msg":"[TASK] [71766] [Get documents] Issued 2 tasks while MongoDB was not connected"}
+{"timestamp":"2022-11-16T13:05:54.965Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:05:54.965Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:05:54.970Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:05:54.970Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:35:22.820Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:35:22.853Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:35:22.854Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:35:22.854Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:35:22.855Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:35:22.855Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:35:32.844Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:35:32.844Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:35:32.858Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:35:32.858Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:35:33.859Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSPrimary --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:35:33.859Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:35:33.859Z","msg":"[INFO] Disconnected from MongoDB server"}
+{"timestamp":"2022-11-16T13:35:33.863Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:35:33.863Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:35:33.881Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:35:33.881Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:35:33.891Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:35:33.891Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:35:34.197Z","msg":"[TASK] [75340] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:34.698Z","msg":"[TASK] [75341] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:35.199Z","msg":"[TASK] [75342] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:35.700Z","msg":"[TASK] [75343] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:36.200Z","msg":"[TASK] [75344] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:36.700Z","msg":"[TASK] [75345] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:37.201Z","msg":"[TASK] [75346] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:37.701Z","msg":"[TASK] [75347] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:38.201Z","msg":"[TASK] [75348] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:38.701Z","msg":"[TASK] [75349] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:39.202Z","msg":"[TASK] [75350] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:39.702Z","msg":"[TASK] [75351] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:40.202Z","msg":"[TASK] [75352] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:40.703Z","msg":"[TASK] [75353] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:41.204Z","msg":"[TASK] [75354] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:41.704Z","msg":"[TASK] [75355] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:42.204Z","msg":"[TASK] [75356] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:42.704Z","msg":"[TASK] [75357] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:43.204Z","msg":"[TASK] [75358] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:43.704Z","msg":"[TASK] [75359] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:43.884Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:35:43.884Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:35:43.893Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:35:43.893Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:35:44.205Z","msg":"[TASK] [75360] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:44.705Z","msg":"[TASK] [75361] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:45.206Z","msg":"[TASK] [75362] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:45.707Z","msg":"[TASK] [75363] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:46.208Z","msg":"[TASK] [75364] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:46.710Z","msg":"[TASK] [75365] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:47.210Z","msg":"[TASK] [75366] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:47.710Z","msg":"[TASK] [75367] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:48.210Z","msg":"[TASK] [75368] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:48.710Z","msg":"[TASK] [75369] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:49.211Z","msg":"[TASK] [75370] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:49.711Z","msg":"[TASK] [75371] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:50.211Z","msg":"[TASK] [75372] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:50.711Z","msg":"[TASK] [75373] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:51.211Z","msg":"[TASK] [75374] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:51.712Z","msg":"[TASK] [75375] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:52.212Z","msg":"[TASK] [75376] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:52.711Z","msg":"[TASK] [75377] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:53.212Z","msg":"[TASK] [75378] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:53.713Z","msg":"[TASK] [75379] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:54.215Z","msg":"[TASK] [75380] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:54.716Z","msg":"[TASK] [75381] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:55.216Z","msg":"[TASK] [75382] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:55.717Z","msg":"[TASK] [75383] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:56.219Z","msg":"[TASK] [75384] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:56.719Z","msg":"[TASK] [75385] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:57.219Z","msg":"[TASK] [75386] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:57.720Z","msg":"[TASK] [75387] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:58.219Z","msg":"[TASK] [75388] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:58.719Z","msg":"[TASK] [75389] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:59.220Z","msg":"[TASK] [75390] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:35:59.724Z","msg":"[TASK] [75391] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:00.224Z","msg":"[TASK] [75392] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:00.724Z","msg":"[TASK] [75393] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:01.225Z","msg":"[TASK] [75394] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:01.725Z","msg":"[TASK] [75395] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:02.225Z","msg":"[TASK] [75396] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:02.726Z","msg":"[TASK] [75397] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:03.226Z","msg":"[TASK] [75398] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:03.727Z","msg":"[TASK] [75399] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:04.199Z","msg":"[ERROR] [TASK] [75340] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:04.228Z","msg":"[TASK] [75400] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:04.700Z","msg":"[ERROR] [TASK] [75341] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:04.727Z","msg":"[TASK] [75401] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:05.200Z","msg":"[ERROR] [TASK] [75342] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:05.228Z","msg":"[TASK] [75402] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:05.701Z","msg":"[ERROR] [TASK] [75343] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:05.728Z","msg":"[TASK] [75403] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:06.201Z","msg":"[ERROR] [TASK] [75344] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:06.228Z","msg":"[TASK] [75404] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:06.702Z","msg":"[ERROR] [TASK] [75345] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:06.728Z","msg":"[TASK] [75405] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:07.202Z","msg":"[ERROR] [TASK] [75346] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:07.228Z","msg":"[TASK] [75406] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:07.702Z","msg":"[ERROR] [TASK] [75347] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:07.730Z","msg":"[TASK] [75407] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:08.202Z","msg":"[ERROR] [TASK] [75348] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:08.230Z","msg":"[TASK] [75408] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:08.701Z","msg":"[ERROR] [TASK] [75349] [Get documents] execution failed: Server selection timed out after 30000 ms","data":{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"rsdvl01","maxElectionId":"7fffffff000000000000c0c0","maxSetVersion":146970,"commonWireVersion":0,"logicalSessionTimeoutMinutes":30}}}
+{"timestamp":"2022-11-16T13:36:08.730Z","msg":"[TASK] [75409] [Get documents] Start execution while MongoDB is not connected"}
+{"timestamp":"2022-11-16T13:36:09.199Z","msg":"[WARN] MongoDB had a server selection error and is still disconnected after 5s. We're closing the connection to force a full reconnect."}
+{"timestamp":"2022-11-16T13:36:09.205Z","msg":"[EVENT] [serverClosed] [dvllmg01b]","data":{"topologyId":0,"address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:36:09.205Z","msg":"[EVENT] [serverClosed] [dvllmg01a]","data":{"topologyId":0,"address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:36:09.206Z","msg":"[EVENT] [serverClosed] [dvllmg01c]","data":{"topologyId":0,"address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:36:09.206Z","msg":"[EVENT] [topologyClosed]","data":{"topologyId":0}}
+{"timestamp":"2022-11-16T13:36:09.207Z","msg":"[INFO] MongoDB client was successfully disconnected"}
+{"timestamp":"2022-11-16T13:36:09.264Z","msg":"[EVENT] [topologyOpening]","data":{"topologyId":1}}
+{"timestamp":"2022-11-16T13:36:09.264Z","msg":"[EVENT] [topologyDescriptionChanged] Unknown --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:36:09.264Z","msg":"[EVENT] [serverOpening] [dvllmg01a]","data":{"topologyId":1,"address":"dvllmg01a.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T13:36:09.268Z","msg":"[EVENT] [serverOpening] [dvllmg01b]","data":{"topologyId":1,"address":"dvllmg01b.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T13:36:09.270Z","msg":"[EVENT] [serverOpening] [dvllmg01c]","data":{"topologyId":1,"address":"dvllmg01c.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T13:36:09.270Z","msg":"[ERROR] [TASK] [75350] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75351] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75352] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75353] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75354] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75355] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75356] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75357] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75358] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75359] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75360] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75361] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75362] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75363] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75364] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75365] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75366] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75367] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75368] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75369] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75370] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75371] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75372] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75373] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75374] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75375] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75376] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75377] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75378] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75379] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75380] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75381] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.271Z","msg":"[ERROR] [TASK] [75382] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75383] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75384] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75385] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75386] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75387] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75388] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75389] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75390] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75391] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75392] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75393] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75394] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75395] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75396] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75397] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75398] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75399] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75400] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75401] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75402] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75403] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75404] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75405] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75406] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75407] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75408] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[ERROR] [TASK] [75409] [Get documents] execution failed: Topology is closed","data":{}}
+{"timestamp":"2022-11-16T13:36:09.272Z","msg":"[WARN] [TASK] [75410] [Get documents] Execution is suspended while forcing a reconnect"}
+{"timestamp":"2022-11-16T13:36:09.368Z","msg":"[EVENT] [serverOpening] [dvllmg01b]","data":{"topologyId":1,"address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:36:09.369Z","msg":"[EVENT] [serverOpening] [dvllmg01a]","data":{"topologyId":1,"address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:36:09.370Z","msg":"[EVENT] [serverOpening] [dvllmg01c]","data":{"topologyId":1,"address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:36:09.371Z","msg":"[EVENT] [serverClosed] [dvllmg01a]","data":{"topologyId":1,"address":"dvllmg01a.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T13:36:09.371Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:36:09.373Z","msg":"[EVENT] [serverClosed] [dvllmg01b]","data":{"topologyId":1,"address":"dvllmg01b.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T13:36:09.373Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:36:09.376Z","msg":"[EVENT] [serverClosed] [dvllmg01c]","data":{"topologyId":1,"address":"dvllmg01c.ile.montreal.qc.ca:27001"}}
+{"timestamp":"2022-11-16T13:36:09.376Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:36:09.380Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] Unknown --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T13:36:09.380Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:36:09.380Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] Unknown --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T13:36:09.381Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T13:36:09.381Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] Unknown --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T13:36:09.429Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T13:36:09.429Z","msg":"[INFO] new primary is dvllmg01c (Old was dvllmg01a)"}
+{"timestamp":"2022-11-16T13:36:09.429Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T13:36:09.429Z","msg":"[INFO] Reconnecting to MongoDB server, after 35569 ms","data":{"elapsedTime":35569}}
+{"timestamp":"2022-11-16T13:36:09.450Z","msg":"[INFO] MongoDB client was successfully reconnected"}
+{"timestamp":"2022-11-16T13:36:09.700Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:36:09.772Z","msg":"[TASK] [75411] [Get documents] Issued 70 tasks while MongoDB was not connected"}
+{"timestamp":"2022-11-16T13:36:09.775Z","msg":"[TASK] [75411] [Get documents] First time to execute after disconnection: 35916 ms"}
+{"timestamp":"2022-11-16T13:36:10.201Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:36:10.705Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:36:11.202Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:36:11.704Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:36:12.202Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:36:12.702Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:36:13.203Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:36:13.701Z","msg":"[WARN] MongoDB had a server selection error but is now connected"}
+{"timestamp":"2022-11-16T13:49:51.930Z","msg":"[TASK] [77053] [Get documents] Elapsed time: 115 ms (slow task) for 4 docs","data":{"elapsedTime":115}}
+{"timestamp":"2022-11-16T13:49:52.931Z","msg":"[TASK] [77055] [Get documents] Elapsed time: 115 ms (slow task) for 4 docs","data":{"elapsedTime":115}}
+{"timestamp":"2022-11-16T14:05:29.842Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T14:05:29.842Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:29.857Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:05:29.857Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:29.862Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:05:29.862Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:39.876Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:05:39.877Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:39.877Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:05:39.877Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:40.169Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:05:40.170Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:40.189Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSPrimary --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T14:05:40.189Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T14:05:40.190Z","msg":"[INFO] Disconnected from MongoDB server"}
+{"timestamp":"2022-11-16T14:05:40.236Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:05:40.236Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T14:05:40.242Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:05:40.242Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T14:05:40.250Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:05:40.250Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:40.250Z","msg":"[INFO] new primary is dvllmg01b (Old was dvllmg01c)"}
+{"timestamp":"2022-11-16T14:05:40.251Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T14:05:40.251Z","msg":"[INFO] Reconnecting to MongoDB server, after 60 ms","data":{"elapsedTime":60}}
+{"timestamp":"2022-11-16T14:05:40.275Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T14:05:40.276Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:40.530Z","msg":"[TASK] [78948] [Get documents] First time to execute after disconnection: 340 ms"}
+{"timestamp":"2022-11-16T14:05:50.250Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:05:50.250Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:05:50.296Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T14:05:50.296Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:26.567Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:35:26.567Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:26.582Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:35:26.582Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:26.582Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T14:35:26.582Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:36.586Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T14:35:36.586Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:36.592Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:35:36.593Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:37.718Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:35:37.718Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:37.721Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSPrimary --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:35:37.721Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T14:35:37.721Z","msg":"[INFO] Disconnected from MongoDB server"}
+{"timestamp":"2022-11-16T14:35:37.732Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:35:37.732Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T14:35:37.737Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T14:35:37.737Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:37.737Z","msg":"[INFO] new primary is dvllmg01a (Old was dvllmg01b)"}
+{"timestamp":"2022-11-16T14:35:37.737Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T14:35:37.737Z","msg":"[INFO] Reconnecting to MongoDB server, after 15 ms","data":{"elapsedTime":15}}
+{"timestamp":"2022-11-16T14:35:37.739Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T14:35:37.739Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:37.748Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:35:37.748Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:37.815Z","msg":"[TASK] [82538] [Get documents] First time to execute after disconnection: 94 ms"}
+{"timestamp":"2022-11-16T14:35:47.760Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T14:35:47.760Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:35:47.761Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T14:35:47.761Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T14:41:58.056Z","msg":"[TASK] [83297] [Get documents] Elapsed time: 205 ms (slow task) for 4 docs","data":{"elapsedTime":205}}
+{"timestamp":"2022-11-16T14:55:38.539Z","msg":"[TASK] [84936] [Get documents] Elapsed time: 101 ms (slow task) for 4 docs","data":{"elapsedTime":101}}
+{"timestamp":"2022-11-16T15:05:25.794Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T15:05:25.794Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:25.802Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:05:25.802Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:25.816Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:05:25.816Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:35.815Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:05:35.815Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:35.823Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:05:35.823Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:37.099Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSPrimary --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T15:05:37.099Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T15:05:37.099Z","msg":"[INFO] Disconnected from MongoDB server"}
+{"timestamp":"2022-11-16T15:05:37.101Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:05:37.101Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T15:05:37.114Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:05:37.114Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T15:05:37.117Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:05:37.117Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:37.117Z","msg":"[INFO] new primary is dvllmg01c (Old was dvllmg01a)"}
+{"timestamp":"2022-11-16T15:05:37.117Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T15:05:37.117Z","msg":"[INFO] Reconnecting to MongoDB server, after 17 ms","data":{"elapsedTime":17}}
+{"timestamp":"2022-11-16T15:05:37.124Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:05:37.124Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:37.127Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T15:05:37.127Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:37.162Z","msg":"[TASK] [86132] [Get documents] First time to execute after disconnection: 63 ms"}
+{"timestamp":"2022-11-16T15:05:47.135Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:05:47.135Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:05:47.139Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T15:05:47.139Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:26.365Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:35:26.366Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:26.383Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T15:35:26.383Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:26.388Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:35:26.388Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:36.394Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T15:35:36.394Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:36.401Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:35:36.401Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:36.714Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:35:36.714Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:36.718Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSPrimary --> RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:35:36.718Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary --> ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T15:35:36.718Z","msg":"[INFO] Disconnected from MongoDB server"}
+{"timestamp":"2022-11-16T15:35:36.736Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:35:36.736Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T15:35:36.739Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T15:35:36.739Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T15:35:36.740Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:35:36.740Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary"}
+{"timestamp":"2022-11-16T15:35:36.741Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01b] RSSecondary --> RSPrimary","data":{"type":"RSPrimary","address":"dvllmg01b:27001"}}
+{"timestamp":"2022-11-16T15:35:36.741Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetNoPrimary --> ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:36.742Z","msg":"[INFO] new primary is dvllmg01b (Old was dvllmg01c)"}
+{"timestamp":"2022-11-16T15:35:36.742Z","msg":"[INFO] Connected to MongoDB server"}
+{"timestamp":"2022-11-16T15:35:36.742Z","msg":"[INFO] Reconnecting to MongoDB server, after 23 ms","data":{"elapsedTime":23}}
+{"timestamp":"2022-11-16T15:35:36.819Z","msg":"[TASK] [89727] [Get documents] First time to execute after disconnection: 101 ms"}
+{"timestamp":"2022-11-16T15:35:46.751Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01a] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01a:27001"}}
+{"timestamp":"2022-11-16T15:35:46.751Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
+{"timestamp":"2022-11-16T15:35:46.755Z","msg":"[EVENT] [serverDescriptionChanged] [dvllmg01c] RSSecondary","data":{"type":"RSSecondary","address":"dvllmg01c:27001"}}
+{"timestamp":"2022-11-16T15:35:46.755Z","msg":"[EVENT] [topologyDescriptionChanged] ReplicaSetWithPrimary"}
