@@ -20,11 +20,9 @@ This is a regression introduced in version 4.7 of the NodeJS MongoDB driver.
 
 The MongoDB team acknowledged this issue by releasing the new [4.12.0](https://github.com/mongodb/node-mongodb-native/releases/tag/v4.12.0) version, which contains the following statement:
 
-```
 Version 4.7.0 of the Node driver released an improvement to our server monitoring in FAAS environments by allowing the driver to skip monitoring events if there were more than one monitoring events in the queue when the monitoring code restarted. When skipping monitoring events that contained a topology change, the driver would incorrectly fail to update its view of the topology.
 
 Version 4.12.0 fixes this issue by ensuring that the topology is always updated when monitoring events are processed.
-```
 
 
 ## Test
