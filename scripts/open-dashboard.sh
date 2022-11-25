@@ -10,6 +10,8 @@ POD_NAME=$(kubectl get pods --namespace $NAMESPACE -l "app.kubernetes.io/name=gr
 
 (echo && \
     echo "Waiting 5 secs before opening the dashboard, while establishing the port-forward tunnel" && \
+    echo "   Will open http://localhost:3000/d/OjVAKqSVz/mongodb-client-tests?orgId=1&from=now-3h&to=now" && \
+    echo "   Use user 'admin' and password 'admin' to log in." && \
     echo && \
     sleep 5 && \
     open http://localhost:3000/d/OjVAKqSVz/mongodb-client-tests?orgId=1&from=now-3h&to=now) &
